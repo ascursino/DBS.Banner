@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DBS.Banner1.Banner.Banner, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">DBS.Banner1</property>
+        <property name="Description" type="string">DBS Banner WebPart1</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

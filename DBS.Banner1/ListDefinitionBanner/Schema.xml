@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint"
+      Title="ListDefinitionBannerErrado"
+      FolderCreation="FALSE"
+      Direction="$Resources:Direction;"
+      Url="Lists/ListDefinitionBanner-ListDefinition1"
+      BaseType="0"
+      xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x010089E3E6DB8C9B4B3FBB980447E313CE94"/>
+      <!-- referência ao que foi criado em elements.xml -->
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{F2B2D604-6B9D-4322-B0FF-CB0749FA2E30}" DisplayName="Título"         Name="Titulo"     Type="Text"    Group="Custom Columns" StaticName="Titulo"     SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar1" RowOrdinal="0" Required="FALSE"/>
+      <Field ID="{58C839EF-906F-4B9F-ACE5-73FB3DD1400E}" DisplayName="Descrição"      Name="Descricao"  Type="Text"    Group="Custom Columns" StaticName="Descricao"  SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar2" RowOrdinal="0" Required="FALSE"/>
+      <Field ID="{61FA5955-B529-42AD-97E0-098E6893A671}" DisplayName="Imagem"         Name="Imagem"     Type="Text"    Group="Custom Columns" StaticName="Imagem"     SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar3" RowOrdinal="0" Required="FALSE"/>
+      <Field ID="{A480AA1A-078F-40EA-A41D-1C89FFB01A0E}" DisplayName="Título no Menu" Name="TituloMenu" Type="Text"    Group="Custom Columns" StaticName="TituloMenu" SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar4" RowOrdinal="0" Required="FALSE"/>
+      <Field ID="{D52FECB7-1C91-4F82-ACE5-B82EFCD8DCCA}" DisplayName="Link"           Name="Link"       Type="Text"    Group="Custom Columns" StaticName="Link"       SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar5" RowOrdinal="0" Required="FALSE"/>
+      <Field ID="{BFF37D77-1178-481B-B4B9-D13287D29DE5}" DisplayName="Ativo"          Name="Ativo"      Type="Boolean" Group="Custom Columns" StaticName="Ativo"      SourceID="{$ListId:Lists/listaBanner;}" ColName="bit1"      RowOrdinal="0" Required="FALSE"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard"/>
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" ShowField="FALSE"></FieldRef>
+          <FieldRef Name="LinkTitle" ShowField="FALSE"></FieldRef>
+
+          <FieldRef Name="Titulo"     ></FieldRef>
+          <FieldRef Name="Descricao"  ></FieldRef>
+          <FieldRef Name="Imagem"     ></FieldRef>
+          <FieldRef Name="TituloMenu" ></FieldRef>
+          <FieldRef Name="Link"       ></FieldRef>
+          <FieldRef Name="Ativo"      ></FieldRef>
+
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

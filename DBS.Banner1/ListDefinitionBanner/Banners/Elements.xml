@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Banners"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Banners"
+                Description="Lista de itens que compõem o Banner principal">
+
+    <Data>
+      <Rows>
+
+        <Row>
+          <Field Name="Titulo"    >1Pique Unimed foi um sucesso!</Field>
+          <Field Name="Descricao" >A Corrida e Caminhada Pique Unimed, que aconteceu no dia 16 de outubro às 9 horas em Niterói, recebeu grande adesão dos moradores locais. Com o patrocínio master da Oncomed...</Field>
+          <Field Name="Imagem"    >http://dbs-n01/_layouts/images/DBS.Banner1/1.jpg</Field>
+          <Field Name="TituloMenu">Pique Unimed foi um sucesso!</Field>
+          <Field Name="Link"      >http://www.hugoreis.net</Field>
+          <Field Name="Ativo"     >TRUE</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Titulo"    >2Palestra sobre como viver com câncer</Field>
+          <Field Name="Descricao" >O Dr. Luiz Henrique de Castro Guedes, médico oncologista do corpo clínico da Oncomed e chefe do setor de oncologia do Hospital Antônio Pedro, irá ministrar a palestra Vivendo com Câncer...</Field>
+          <Field Name="Imagem"    >http://dbs-n01/_layouts/images/DBS.Banner1/2.jpg</Field>
+          <Field Name="TituloMenu">Palestra sobre como viver com câncer</Field>
+          <Field Name="Link"      >http://www.google.com.br</Field>
+          <Field Name="Ativo"     >TRUE</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Titulo"    >3Oncomed participa da HSM 2010</Field>
+          <Field Name="Descricao" >A diretoria e os gestores da Oncomed Clínica Oncológica participaram da HSM ExpoManagement 2010, que aconteceu de 8 a 10 de novembro, em São Paulo...</Field>
+          <Field Name="Imagem"    >http://dbs-n01/_layouts/images/DBS.Banner1/3.jpg</Field>
+          <Field Name="TituloMenu">Oncomed participa da HSM 2010</Field>
+          <Field Name="Link"      >http://www.oncomedoncologia.com.br</Field>
+          <Field Name="Ativo"     >TRUE</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Titulo"    >4Ação de combate ao câncer reúne famílias em Niterói</Field>
+          <Field Name="Descricao" >No dia 6 de abril, a equipe médica da Oncomed esteve na praia de Icaraí, em Niterói, prestando esclarecimentos a respeito de como prevenir o câncer...</Field>
+          <Field Name="Imagem"    >http://dbs-n01/_layouts/images/DBS.Banner1/4.jpg</Field>
+          <Field Name="TituloMenu">Ação de combate ao câncer em Niterói</Field>
+          <Field Name="Link"      >http://www.twitter.com</Field>
+          <Field Name="Ativo"     >TRUE</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </ListInstance>
+
+</Elements>

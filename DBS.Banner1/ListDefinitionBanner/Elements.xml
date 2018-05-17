@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field ID="{F2B2D604-6B9D-4322-B0FF-CB0749FA2E30}" DisplayName="Título"         Name="Titulo"     Type="Text"    Group="" StaticName="Titulo"     SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar1" RowOrdinal="0" />
+  <Field ID="{58C839EF-906F-4B9F-ACE5-73FB3DD1400E}" DisplayName="Descrição"      Name="Descricao"  Type="Text"    Group="" StaticName="Descricao"  SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar2" RowOrdinal="0" />
+  <Field ID="{61FA5955-B529-42AD-97E0-098E6893A671}" DisplayName="Imagem"         Name="Imagem"     Type="Text"    Group="" StaticName="Imagem"     SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar3" RowOrdinal="0" />
+  <Field ID="{A480AA1A-078F-40EA-A41D-1C89FFB01A0E}" DisplayName="Título no Menu" Name="TituloMenu" Type="Text"    Group="" StaticName="TituloMenu" SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar4" RowOrdinal="0" />
+  <Field ID="{D52FECB7-1C91-4F82-ACE5-B82EFCD8DCCA}" DisplayName="Link"           Name="Link"       Type="Text"    Group="" StaticName="Link"       SourceID="{$ListId:Lists/listaBanner;}" ColName="nvarchar5" RowOrdinal="0" />
+  <Field ID="{BFF37D77-1178-481B-B4B9-D13287D29DE5}" DisplayName="Ativo"          Name="Ativo"      Type="Boolean" Group="" StaticName="Ativo"      SourceID="{$ListId:Lists/listaBanner;}" ColName="bit1"      RowOrdinal="0" />
+
+  <ContentType  ID="0x010089E3E6DB8C9B4B3FBB980447E313CE94"
+                Name="Banner Item"
+                Group="Custom Content Types"
+                Description="Banner item content type."
+                Version="0">
+    <FieldRefs>
+      <FieldRef ID="{F2B2D604-6B9D-4322-B0FF-CB0749FA2E30}" />
+      <FieldRef ID="{58C839EF-906F-4B9F-ACE5-73FB3DD1400E}" />
+      <FieldRef ID="{61FA5955-B529-42AD-97E0-098E6893A671}" />
+      <FieldRef ID="{A480AA1A-078F-40EA-A41D-1C89FFB01A0E}" />
+      <FieldRef ID="{D52FECB7-1C91-4F82-ACE5-B82EFCD8DCCA}" />
+      <FieldRef ID="{BFF37D77-1178-481B-B4B9-D13287D29DE5}" />
+    </FieldRefs>
+  </ContentType>
+
+  <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List Definition project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="ListDefinitionBanner"
+        Type="10000"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="ListDefinitionBanner"
+        Description="My List Definition"
+        Image="/_layouts/images/itgen.png"/>
+</Elements>

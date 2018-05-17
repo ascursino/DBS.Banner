@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="58043a50-bc79-42a4-b351-0bf1e1ba5b36" solutionId="58043a50-bc79-42a4-b351-0bf1e1ba5b36" resetWebServer="false" name="DBS.Banner1" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f862af07-14bb-46ba-96ef-d741cb038b57" />
+    <featureReference itemId="d552b7ef-7985-436c-8cc5-f7d7d65b426c" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="55d24bd4-322c-4726-9c69-6feacc485ab8" />
+    <projectItemReference itemId="4b257dc2-5529-4b9b-b702-b715f5d5e990" />
+  </projectItems>
+</package>
